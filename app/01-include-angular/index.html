@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html ng-app="MyApp">
   <head>
     <meta charset="utf-8">
     <title>AngularJS Email App</title>
@@ -7,8 +7,18 @@
   </head>
   <body>
 
+     <main class="main" role="main">
+      <div class="wrapper">
+        <div ng-view></div>
+      </div>
+    </main>
 
     <script src="lib/jquery-v1.11.1.js"></script>
     <script src="lib/angular-v1.2.22.js"></script>
+    <script src="lib/angular-route-v1.2.22.js"></script>
+
+    <script src="js/application.js"></script>
+    <script src="js/controllers/emailcontroller.js"></script>
+    <script src="js/controllers/inboxcontroller.js"></script>
   </body>
 </html>
