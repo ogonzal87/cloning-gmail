@@ -1,20 +1,17 @@
-// (function() {
+(function() {
 
-angular.module('MyApp', [
+angular.module('EmailApp', [
   'ngRoute'
-]).config(function($routeProvider) {
+]).config(function ( $routeProvider ) {
+  'use strict';
   $routeProvider
-  .when('/inbox', {
-    templateUrl: 'views/inbox.html',
-    controller: 'InboxCtrl'
-  })
-  .when('/inbox/email/:id', {
-    templateUrl: 'views/email.html',
-    controller: 'EmailController'
-  })
-  .otherwise({
-    redirectTo: '/inbox'
-  });
+    .when('/inbox', {
+      templateUrl: 'views/inbox.html',
+      controller: 'InboxCtrl'
+    })
+    .otherwise({
+      redirectTo: '/inbox'
+    });
 });
 
-// })();
+})();

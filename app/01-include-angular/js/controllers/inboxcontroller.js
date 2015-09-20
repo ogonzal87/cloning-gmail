@@ -1,12 +1,17 @@
-// (function() {
+(function() {
 
-  angular.module('MyApp')
-    .controller('InboxCtrl', function($scope){
-      $scope.title = 'This is a test';
-
-      console.log('Inbox Loaded!');
+/**
+ * Controller: InboxCtrl
+ */
+angular.module('EmailApp')
+  .controller('InboxCtrl',
+    function InboxCtrl ( $scope ) {
+      'use strict';
+      $scope.meta = {
+        title: "My Inbox"
+      };
     });
 
-// })();
+})();
 
 
